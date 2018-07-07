@@ -1,0 +1,41 @@
+$color-gray: #626262;
+$color-1: #8f98ad;
+$color-2: #a6e1ad;
+$base-unit: 20px;
+
+.navbar-dark {
+  background-color: $color-1;
+
+  .btn-outline-success {
+    color: $color-2;
+    background-color: transparent;
+    background-image: none;
+    border-color: $color-2;
+  }
+}
+
+.app-container {
+  width: 100%;
+  margin: $base-unit * 3 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@include media-breakpoint-up(md) {
+  .app-container {
+    justify-content: space-between;
+  }
+}
+
+.intro {
+  margin-top: $base-unit * 3;
+
+  .description {
+    color: $color-gray;
+  }
+}
+
+.container-fluid {
+  background-color: $color-2;
+  padding: $base-unit *2 0;
+}
